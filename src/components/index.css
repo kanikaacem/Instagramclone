@@ -199,3 +199,13 @@
 .emotion{
     fill: yellow !important;
 }
+
+.ShareButton{
+    padding: 0 20px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    margin-left: 140px;
+
+}

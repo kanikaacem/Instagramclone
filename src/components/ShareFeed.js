@@ -35,6 +35,7 @@ function ShareFeed() {
           <EmojiEmotions className="emotion" />
           <span className="ShareButtonText"> Feelings</span>
         </div>
+        <button className="ShareButton">Share</button>
       </div>
     </div>
   );
