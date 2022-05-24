@@ -1,0 +1,201 @@
+*{
+    font-family: 'Roboto', sans-serif;  
+}
+.Topbar{
+    display: flex;
+    height: 50px;
+    background: black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftsidebar span{
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.profileImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor:pointer;
+    object-fit: cover;
+}
+.rightsidebar{
+    display:flex;
+    align-items: center;
+}
+.rightsidebarLinkMenu{
+    display:flex;
+}
+.rightsidelink{
+    margin-right:20px;
+    color:white;
+    cursor:pointer;
+}
+
+.searchbar{
+    width: auto;
+    border: none;
+    padding: 10px;
+    width: 350px;
+}
+.searchbar:focus{
+    outline:none;
+}
+.leftsidebar{
+    flex:3;
+}
+.leftsidebar span{
+    margin-left:200px;
+}
+.centersidebar{
+    flex:5;
+}
+.rightsidebar{
+    flex:4;
+}
+/* Sidebar container */
+.mainContainer{
+    display:flex;
+    height: calc(100vh - 50px);
+}
+.Sidebar{
+    flex: 2;
+    overflow-y:scroll;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.Feed{
+    flex:7;
+}
+.RightSidebar{
+    flex:3
+}
+.SidebarWrapper{
+    padding:10px;
+}
+.SidebarItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left:20px;
+}
+.SidebarItemIcon{
+    margin-right:10px;
+}
+.showMore{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 50px;
+}
+.FriendImage{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.FriendItem{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.searchbarDiv{
+    background: white;
+    width: 70%;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbarIcon{
+    margin-left:10px;
+}
+
+.rightsidebarIcon{
+    display:flex;
+}
+.rightbaricon{
+    position: relative;
+    margin-right:30px;
+}
+.rightbaricon svg{
+    fill:white;
+}
+.rightbaricontext{
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    background: red;
+    color: white;
+    font-weight: 500;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+.FeedWrapper{
+    padding:20px;
+}
+.ShareFeed{
+    box-shadow: -6px 12px 16px 0px rgba(102,96,96,0.75);
+    -webkit-box-shadow: -6px 12px 16px 0px rgba(102,96,96,0.75);
+    -moz-box-shadow: -6px 12px 16px 0px rgba(102,96,96,0.75);
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    padding: 10px
+}
+.ShareProfileImg{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.ShareTop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ShareTopInput input{
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    width: 600px;
+
+}
+.ShareBottom{
+    margin-top:10px;
+    display:flex;
+}
+.ShareButtonItems{
+    display:flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.insertPhoto{
+    fill:orange !important;
+}
+
+.style{
+    fill:blue !important;
+}
+
+.addLocation{
+    fill: green !important;
+}
+
+.emotion{
+    fill: yellow !important;
+}
