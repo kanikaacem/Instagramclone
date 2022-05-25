@@ -25,7 +25,94 @@ function RightSidebar({ profile }) {
   };
 
   const ProfileRightSidebar = () => {
-    return <>this is prrofile</>;
+    return (
+      <>
+        <div className="ProfileRightSidebar">
+          <div className="ProfileRightTop">
+            <h1 className="UserInformation"> User Information</h1>
+            <div class="Information">City : New York</div>
+            <div class="Information">From : New York</div>
+            <div class="Information">Relationship : Single</div>
+          </div>
+          <div className="ProfileRightBottom">
+            <h4> User Friends</h4>
+            <div className="UsersFriends">
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+
+              <div class="UserFriendInformation">
+                <img
+                  src="/assets/person/3.jpeg"
+                  className="FriendInformationImage"
+                  alt=""
+                />
+                <span class="FriendInformationName"> User Friends</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
   };
   return (
     <div className="RightSidebar">

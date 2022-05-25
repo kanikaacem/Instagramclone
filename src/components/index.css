@@ -400,3 +400,32 @@
 .ProfileFeed{
     flex: 7;
 }
+
+.UserInformation{
+    margin:10px 0;
+}
+
+.Information{
+    margin-bottom: 10px;
+}
+
+.FriendInformationImage{
+    width:150px;
+}
+
+.UserFriendInformation{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.UsersFriends{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 6%
+}
+
+.FriendInformationName{
+    margin: 10px 0;
+}
