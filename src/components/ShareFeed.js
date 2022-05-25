@@ -13,7 +13,7 @@ function ShareFeed() {
           className="ShareProfileImg"
           alt=""
         ></img>
-        <span class="ShareTopInput">
+        <span className="ShareTopInput">
           <input placeholder="What's in your mind ?" />
         </span>
       </div>

@@ -37,3 +37,6 @@ export default App;
 //You need to install Icons
 //Yarn add @material-ui/icons
 //npm install @material-ui/icons
+
+//*/to give the position sticky to a scrollbar div use height with it */
+//*/don't give height to main  */

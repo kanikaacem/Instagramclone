@@ -8,6 +8,8 @@ import {
   WorkOutline,
   Event,
 } from "@material-ui/icons";
+import { Users } from "../DemoData";
+import CloseFriend from "./CloseFriend";
 function Sidebar() {
   return (
     <div className="Sidebar">
@@ -49,54 +51,9 @@ function Sidebar() {
         <button className="showMore">Show More</button>
         <hr className="sidebarSeperator" />
 
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
-        <div className="FriendItem">
-          <img src="/assets/person/2.jpeg" className="FriendImage" alt="" />
-          <span> Friend</span>
-        </div>
+        {Users.map((user) => (
+          <CloseFriend user={user} key={user.id} />
+        ))}
       </div>
     </div>
   );
