@@ -299,6 +299,7 @@
 .HeartIcon {
     width: 40px;
     margin-right: 10px;
+    cursor:pointer;
 }
 
 .peopleCommentCount {
@@ -357,4 +358,38 @@
 }
 .connectionFeedDescription{
     padding:10px;
+}
+.websiteLogo{
+    color: white;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 25px
+}
+.UserProfileDiv{
+    flex: 7;
+}
+.profileBackgroundImage{
+    height: 400px !important;
+    width: 100%;
+}
+.profileUserImage{
+    position: absolute;
+    top: 277px;
+    width: 200px;
+    height: 200px;
+    left: 40%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+.UserProfiletop{
+    position:relative;
+}
+
+.UserProfileBottom{
+    margin-top: 83px;
+    text-align: center;
+}
+.UserName{
+    font-size:30px;
 }

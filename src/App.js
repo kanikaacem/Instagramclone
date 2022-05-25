@@ -1,29 +1,27 @@
 // import PersonIcon from '@mui/icons-material/Person';
 // import topbar from "./components/topbar";
-
-import Menubar from "./components/Menubar";
-import Sidebar from "./components/Sidebar";
-import Feed from "./components/Feed";
-import RightSidebar from "./components/RightSidebar";
+import Home from "./Home";
+import ProfilePage from "./components/ProfilePage";
 import "./components/index.css";
+import Menubar from "./components/Menubar";
+//Routing
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div className="mainDiv">
+      <Router>
         <Menubar></Menubar>
-        <div className="mainContainer">
-          <Sidebar></Sidebar>
-          <Feed></Feed>
-          <RightSidebar></RightSidebar>
-        </div>
-      </div>
+        <Routes>
+          <Route exact path="/" element={<Home></Home>} />
+          <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }
 
 export default App;
-
 //tutorial
 //https://www.youtube.com/playlist?list=PLj-4DlPRT48nfYgDK00oTjlDF4O0ZZyG8
 //install material ui packages.
@@ -40,3 +38,18 @@ export default App;
 
 //*/to give the position sticky to a scrollbar div use height with it */
 //*/don't give height to main  */
+
+//To install router use npm install react-router-dom
+//Routing is used for showing which component should be show based on the url shown in the searchbar
+//726
+//In react-router-dom v6, "Switch" is replaced by routes "Routes". You need to update the import from
+
+//import { Switch, Route } from "react-router-dom";
+//to
+
+//import { Routes ,Route } from 'react-router-dom';
+//You also need to update the Route declaration from
+//https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
+
+//whenever we send request to the browser, it takes every request as new and send the whole html page.
+//https://www.youtube.com/watch?v=aZGzwEjZrXc

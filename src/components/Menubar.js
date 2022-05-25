@@ -4,7 +4,9 @@ function Menubar() {
   return (
     <div className="Topbar">
       <div className="leftsidebar">
-        <span> Socialapp </span>
+        <a className="websiteLogo" href="/">
+          Socialapp{" "}
+        </a>
       </div>
       <div className="centersidebar">
         <div className="searchbarDiv">
@@ -40,7 +42,9 @@ function Menubar() {
         </div>
 
         <div className="rightsideicon"></div>
-        <img src="/assets/person/1.jpeg" alt="" className="profileImage" />
+        <a href="/profile">
+          <img src="/assets/person/1.jpeg" alt="" className="profileImage" />
+        </a>
       </div>
     </div>
   );
