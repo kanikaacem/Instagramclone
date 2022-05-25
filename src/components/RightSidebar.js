@@ -1,16 +1,12 @@
 import OnlineFriend from "./OnlineFriend";
 import { Users } from "../DemoData";
-function RightSidebar() {
-  {
-    console.log(Users);
-  }
-  return (
-    <div className="RightSidebar">
-      <div className="RightSideBarWrapper">
+function RightSidebar({ profile }) {
+  const HomeRightSidebar = () => {
+    return (
+      <>
         <div className="BirthdayDiv">
           <img className="BirthdayImage" src="/assets/gift.png" alt="" />
           <span>
-            {" "}
             Connection Friends and 3 other Friends have their birthday{" "}
           </span>
         </div>
@@ -24,6 +20,21 @@ function RightSidebar() {
             <OnlineFriend user={user} key={user.id} />
           ))}
         </div>
+      </>
+    );
+  };
+
+  const ProfileRightSidebar = () => {
+    return <>this is prrofile</>;
+  };
+  return (
+    <div className="RightSidebar">
+      <div className="RightSideBarWrapper">
+        {profile === "profile" ? (
+          <ProfileRightSidebar></ProfileRightSidebar>
+        ) : (
+          <HomeRightSidebar></HomeRightSidebar>
+        )}
       </div>
     </div>
   );

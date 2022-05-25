@@ -1,6 +1,6 @@
 import ConnectionFeed from "./ConnectionFeed";
 import { Posts } from "../DemoData";
-
+import RightSidebar from "./RightSidebar";
 function UserProfile() {
   return (
     <>
@@ -22,9 +22,14 @@ function UserProfile() {
           <div className="ProfileDescription"> Hello ! , my friends .</div>
         </div>
 
-        {Posts.map((p) => {
-          return <ConnectionFeed post={p} key={p.id} />;
-        })}
+        <div className="UserProfileContent">
+          <div className="ProfileFeed">
+            {Posts.map((p) => {
+              return <ConnectionFeed post={p} key={p.id} />;
+            })}
+          </div>
+          <RightSidebar profile="profile"></RightSidebar>
+        </div>
       </div>
     </>
   );

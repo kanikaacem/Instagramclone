@@ -9,7 +9,6 @@ function ProfilePage() {
         <div className="mainContainer">
           <Sidebar></Sidebar>
           <UserProfile></UserProfile>
-          <RightSidebar></RightSidebar>
         </div>
       </div>
     </>

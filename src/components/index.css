@@ -393,3 +393,10 @@
 .UserName{
     font-size:30px;
 }
+
+.UserProfileContent{
+    display: flex;
+}
+.ProfileFeed{
+    flex: 7;
+}
