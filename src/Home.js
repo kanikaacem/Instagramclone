@@ -1,7 +1,8 @@
 import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed";
 import RightSidebar from "./components/RightSidebar";
-
+import OnlineFriend from "./components/OnlineFriend";
+import { Users } from "./DemoData";
 function Home() {
   return (
     <>

@@ -4,6 +4,7 @@ import Home from "./Home";
 import ProfilePage from "./components/ProfilePage";
 import "./components/index.css";
 import Menubar from "./components/Menubar";
+import Login from "./components/Login";
 //Routing
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -12,9 +13,15 @@ function App() {
     <>
       <Router>
         <Menubar></Menubar>
+
         <Routes>
           <Route exact path="/" element={<Home></Home>} />
           <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
+          <Route path="/login" element={<Login></Login>}></Route>
+          <Route
+            path="/register"
+            element={<Login register="register"></Login>}
+          ></Route>
         </Routes>
       </Router>
     </>
@@ -53,3 +60,7 @@ export default App;
 
 //whenever we send request to the browser, it takes every request as new and send the whole html page.
 //https://www.youtube.com/watch?v=aZGzwEjZrXc
+
+//Webkit scrollbar is not work in firefox : Note: This only works on -webkit browsers like chrome, safari because there are not W3C standard for CSS and therefore most browsers just ignore them.
+
+//100vw means 100% of the viewport width. 100vh; 100% of the height. Very handy when doing full screen slide

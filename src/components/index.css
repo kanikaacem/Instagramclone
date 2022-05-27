@@ -220,6 +220,9 @@
     width: 600px;
 
 }
+.ShareTopInput input:focus{
+    outline:none;
+}
 
 .ShareBottom {
     margin-top: 10px;
@@ -429,3 +432,72 @@
 .FriendInformationName{
     margin: 10px 0;
 }
+.LoginPage, .RegisterPage{
+    margin-top:50px;
+}
+.LoginPageWrapper ,.RegisterWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.LoginPageContainer{
+    width: 70%;
+    display: flex;
+
+}
+.Loginleft{
+    flex:1;
+    padding:5px;
+}
+.LoginRight{
+    flex: 1;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AppName{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.AppDescription{
+    font-size:25px;
+}
+.LoginInput{
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.LoginButton , .NewAccount{
+    padding: 10px 0;
+    font-size: 20px;
+    background: #000000;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.ForgetPassword{
+    text-align:center;
+    margin:10px;
+}
+.mobileOnlineUser{
+    display: none;
+}
+
+@media screen and (max-width: 968px) {
+    .centersidebar ,.Sidebar, .RightSidebar ,.rightsidebarLinkMenu {
+      display: none !important;
+    }
+    .mobileOnlineUser{
+        display:block;
+    }
+    FeedWrapper {
+        /* padding: 20px; */
+        padding: 20px 0px;
+    }
+    .ShareFeed, .connectionFeedContainer{
+        width: calc(100vw - 50px);
+    }
+  }
