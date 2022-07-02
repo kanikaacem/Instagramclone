@@ -15,8 +15,10 @@ function Sidebar() {
     <div className="Sidebar">
       <div className="SidebarWrapper">
         <div className="SidebarItem">
-          <RssFeed className="SidebarItemIcon"></RssFeed>
-          <span className="SidebarItemText">Feed</span>
+          <a className="SidebarMenuItem" href="/feed">
+            <RssFeed className="SidebarItemIcon"></RssFeed>
+            <span className="SidebarItemText">Feed</span>
+          </a>
         </div>
         <div className="SidebarItem">
           <Chat className="SidebarItemIcon"></Chat>

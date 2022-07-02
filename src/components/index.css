@@ -486,18 +486,42 @@
     display: none;
 }
 
-@media screen and (max-width: 968px) {
-    .centersidebar ,.Sidebar, .RightSidebar ,.rightsidebarLinkMenu {
-      display: none !important;
+.FeedDiv{
+    margin-top:70px;
+}
+.SidebarMenuItem{
+    text-decoration: none;
+    color:black;
+}
+@media screen and (max-width: 1300px) {
+    .centersidebar{
+        display:none;
+    }   
+}
+
+@media screen and (max-width:980px){
+    .RightSidebar{
+        display:none;
     }
-    .mobileOnlineUser{
-        display:block;
+    .Sidebar{
+        display:none;
     }
-    FeedWrapper {
-        /* padding: 20px; */
-        padding: 20px 0px;
+    .ShareButton{
+        margin-left:78px;
     }
-    .ShareFeed, .connectionFeedContainer{
-        width: calc(100vw - 50px);
+    .moreView {
+        margin-left:340px;
     }
-  }
+    .peopleCommentCount {
+        margin-left:308px;
+    }
+}
+
+/* Interview Prepartion */
+.InterviewPrepartion{
+    margin-top:70px;
+    text-align:center;
+}
+#interview-heading{
+    text-align:center;
+}
