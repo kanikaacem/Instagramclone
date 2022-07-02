@@ -6,6 +6,7 @@ import "./components/index.css";
 import Menubar from "./components/Menubar";
 import Login from "./components/Login";
 import Preparation from "./components/Preparation";
+import FLifecycle from "./components/fLifecycle";
 import Feed from "./Feed";
 //Routing
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -24,6 +25,7 @@ function App() {
             path="/preparation"
             element={<Preparation></Preparation>}
           ></Route>
+          <Route path="/fLifecycle" element={<FLifecycle></FLifecycle>}></Route>
           <Route
             path="/register"
             element={<Login register="register"></Login>}
