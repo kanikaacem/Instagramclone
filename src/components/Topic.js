@@ -52,7 +52,7 @@ class Topic extends Component {
   render() {
     return (
       <>
-        <h1 id="interview-heading"> Interview Prepartion</h1>
+        <h1 id="interview-heading"> React JS</h1>
         <span> Seed Value : {this.state.seed} </span>
       </>
     );

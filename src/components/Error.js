@@ -56,6 +56,7 @@ function Error({ ismount, counter, ...array }) {
     <>
       <div>
         <img src="/assets/reacttopic/lifecycle.png"></img>
+        <img src="/assets/reacttopic/LifeCycleMethod.png"></img>
       </div>
       <div> {Topic}</div>
       {function1()}
